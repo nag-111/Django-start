@@ -20,5 +20,3 @@ class Personal_Details(models.Model):
 
     def __str__(self) -> str:
         return self.Pincode
-
-class  
