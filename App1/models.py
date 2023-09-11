@@ -11,3 +11,9 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.title
+    
+class Personal_Details(models.Model):
+    Name = models.CharField(max_length=100)
+    Age = models.IntegerField()
+    def __str__(self):
+        return self.Name

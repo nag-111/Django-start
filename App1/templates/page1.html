@@ -9,15 +9,15 @@
     <h1>hiiiiiii</h1>
     <h2>My name is Nagaraju</h2>
     {%block content%}
-    {%for i in getdata%}
+        {%for i in getdata%}
 
-    <b>{{i.title}}</b><br>
-    {{i.description}}<br>
-    <i>{{i.author}}</i><br>
-    <h6>{{i.created_at}}<br></h6>
+            <b>{{i.title}}</b><br>
+            <i>{{i.author}}</i><br>
+            <p>{{i.description}}</p><br>
+            <h6>{{i.created_at}}<br></h6>
 
-    {%endfor%}
-{%endblock%}
+        {%endfor%}
+    {%endblock%}
 
 </body>
 </html>
