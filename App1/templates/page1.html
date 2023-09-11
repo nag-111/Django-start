@@ -7,6 +7,13 @@
 </head>
 <body>
     <h1>hiiiiiii</h1>
-    <h1>My name is {{name}}</h1>
+    <h2>My name is Nagaraju</h2>
+    {%block content%}
+    {%for i in getdata%}
+
+    {{i.title}}<br>
+    {%endfor%}
+{%endblock%}
+
 </body>
 </html>

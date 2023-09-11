@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Blog
 
 # Create your views here.
 def wel_come(request):
@@ -7,3 +8,7 @@ def wel_come(request):
 
 def page_login(request):
     return render(request,'page1.html',{'name':'nagaraj k'})
+
+def data_move(request):
+    data_from_db = Blog.objects.all
+    return render(request, 'page1.html',{'getdata':data_from_db})

@@ -11,14 +11,3 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.title
-    
-class Personal_Details(models.Model):
-    Name = models.CharField(max_length=50)
-    Age = models.IntegerField(len=2)
-    Address = models.TextField
-    Pincode = models.IntegerField(max_length=6) 
-
-    def __str__(self) -> str:
-        return self.Pincode
-
-class  
