@@ -11,7 +11,11 @@
     {%block content%}
     {%for i in getdata%}
 
-    {{i.title}}<br>
+    <b>{{i.title}}</b><br>
+    {{i.description}}<br>
+    <i>{{i.author}}</i><br>
+    <h6>{{i.created_at}}<br></h6>
+
     {%endfor%}
 {%endblock%}
 
